@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Q</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="DESCRIPTIONGOESHERE">
+    <meta name="keywords" content="KEYWORDSGOHERE">
+    <meta name="author" content="Aric Knowles">
+        <link rel="stylesheet" type="text/css" href="carousel.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+function delay(home) {
+    setTimeout( function() { window.location = "../index.html"}, 1000 );
+}
+</script>
+        
+<script>
+function delaay(about) {
+    setTimeout( function() { window.location = "../about/index.html"}, 1000 );
+}
+</script>
+        
+<script>
+function delayy(gallery) {
+    setTimeout( function() { window.location = "../gallary/gallary.html"}, 1000 );
+}
+</script>
+
+    <script>
+  $(document).ready(function(){
+
+        $(".home").click(function () {
+            $(".exit").animate({height: "100vh"});
+        });
+
+    });
+</script>
+    </head>
+
+    <body>
+        <a href="../about/index.html"></a>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <div class="overlay">
+        </div>
+<div class="exit"></div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/watch?v=clNGOvGXc8A"></iframe>
+            </div>
+
+        <div class="header">
+<div class="bar"><ul><li class="home"><a href="javascript:delay('home')">home</a></li><li class="home" style="padding-left: 310px;padding-right: 310px;"><a href="javascript:delaay('about')">about</a></li><li class="home"><a href="javascript:delayy('gallery')">gallery</a></li></ul></div>
+
+<div class="darken">
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+
+
+               <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <video controls autoplay width="100%">
+  <source src="images/movie2.mp4" type="video/mp4"></video>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/final16.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/final17.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="images/final30.png"  onclick="currentSlide(1)" alt="<em>Water.</em> Paper in water and food coloring.
+">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/final16.jpg" onclick="currentSlide(2)" alt="<em>Water.</em> Paper in water and food coloring.
+">
+                </div>
+                   <div class="column">
+                    <img class="demo cursor" src="images/final17.jpg" onclick="currentSlide(3)" alt="<em>Water.</em> Paper in water and food coloring.
+">
+                </div>
+            </div>
+            <div class=center> </div>
+            <script src="carousel.js"></script> </div>
+    <script src="../about/js/index.js"></script>
+
+            </div></div>
+    
+
+    </body>
+</html>
