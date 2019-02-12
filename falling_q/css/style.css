@@ -1,0 +1,26 @@
+html, body{
+    overflow: hidden;
+}
+
+.square{
+    width: '';
+    height: '';
+    overflow: visible!important;
+    position: absolute;
+    transition: 1.5s;
+ -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1.5s;
+
+}
+@-webkit-keyframes example {
+    from {bottom: 70%;}
+    to {bottom: "";}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {bottom: 70%;}
+    to {bottom: "";}
+}

@@ -9,7 +9,17 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <script src="https://use.typekit.net/esj2lad.js"></script>
+
+
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="overlay">
+
+   <div class="overlay_child">       
+       <canvas id="canvas"></canvas>           </div></div>
+
+    <script src="https://use.typekit.net/esj2lad.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -28,104 +38,6 @@ function delay (URL) {
     });
 </script>
 
-  
-      <link rel="stylesheet" href="css/style.css">
-</head>
-<style>
-    .bar {
-        text-align: center;
-        padding: 9px;
-        max-width: 1200px;
-        margin: auto;
-        
-    }
-    li {
-        border-style:solid;
-        border-radius: 19px;
-        list-style: none;
-        margin: auto;
-        display: inline-block;
-        padding: 9px;
-        width: 100px;
-        letter-spacing: 6px;
-        text-align: center;
-        padding-left: 15px;
-        border-width: 2px;
-        position: absolute;
-        z-index: 600;
-    }
-    li:hover{
-        background: lightgrey;
-        cursor:default;
-    }
-    a{
-        cursor: none;
-  text-decoration: none;
-        color: black;
-    }
-    body {
-                cursor:default;
-
-    }
-    #wrapper {
-        position: absolute;
-        z-index: 1; 
-        left: 50px; 
-        top: 20px; 
-        width:100px; 
-        height:20px; 
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 30px;
-        cursor: none;
-        -webkit-animation: fadein 1.3s;
-        animation: fadein 1.4s ease 1s forwards;
-        animation-delay: 1s;
-        opacity: 0;
-    }
-    
-    
-@-webkit-keyframes fadein {
-    0%   {top: 92%; opacity: 0}
-    100% {top: 90%; opacity: 1}
-}
-
-@keyframes fadein {
-    0%   {top: 92%; opacity: 0 }
-    100% {top: 90%; opacity: 1}
-}
-    a:hover{
-        color: lightgrey;
-        animation-name: fadein
-    }
-
-
-
-.overlay {
-    width: 100vw;
-    height: 0px;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    background: #1c1c1c;
-    overflow: hidden;
-    z-index: 100000;
-    transition: 0.6s cubic-bezier(0.77, 0, 0.18, 1);
-    -webkit-transition: 0.6s cubic-bezier(0.77, 0, 0.18, 1);
-}
-
-</style>    
-<body>
-        <div class="overlay">
-           </div>
-            
-<canvas id="canvas"></canvas>
-  
     <script  src="js/index.js"></script>
     <div id="wrapper">
         <a href="javascript:delay('URL')">Enter</a>

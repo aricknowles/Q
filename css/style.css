@@ -7,3 +7,77 @@ html, body {
 canvas {
   cursor: none;
 }
+.overlay_child {
+	margin:0;
+}
+.bar {
+        text-align: center;
+        padding: 9px;
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+li {
+        border-style:solid;
+        border-radius: 19px;
+        list-style: none;
+        margin: auto;
+        display: inline-block;
+        padding: 9px;
+        width: 100px;
+        letter-spacing: 6px;
+        text-align: center;
+        padding-left: 15px;
+        border-width: 2px;
+        position: absolute;
+        z-index: 600;
+    }
+li:hover{
+        background: lightgrey;
+        cursor:default;
+    }
+a{
+        cursor: none;
+  text-decoration: none;
+        color: black;
+    }
+#wrapper {
+        position: absolute;
+        z-index: 1; 
+        left: 50px; 
+        top: 20px; 
+        width:100px; 
+        height:20px; 
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 30px;
+        cursor: none;
+        -webkit-animation: fadein 1.3s;
+        animation: fadein 1.4s ease 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+    
+    
+@-webkit-keyframes fadein {
+    0%   {top: 92%; opacity: 0}
+    100% {top: 90%; opacity: 1}
+}
+
+@keyframes fadein {
+    0%   {top: 92%; opacity: 0 }
+    100% {top: 90%; opacity: 1}
+}
+    a:hover{
+        color: lightgrey;
+        animation-name: fadein
+    }
+
+
+
+.contain {
+display: flex;
+}
+
